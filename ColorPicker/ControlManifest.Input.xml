@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SriramControls" constructor="ColorPicker" version="0.0.3" display-name-key="SriramControls.ColorPicker" description-key="Color Picker Control by Sriram" control-type="standard">
+         <property name="color" display-name-key="Color" description-key="Default Color." of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/ColorPicker.css" order="1" />
+      <resx path="strings/ColorPicker.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+  </control>
+</manifest>
