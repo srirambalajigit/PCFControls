@@ -1,2 +1,2 @@
 # PCFControls
-Powerapps Control Framework(PCF) Controls
+Collection of PCF controls that I would like to share with the community.
