@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="SriramControls" constructor="MonthPicker" version="0.0.2" display-name-key="SriramControls.MonthPicker" description-key="Month Picker Control by Sriram" control-type="standard">
+    <property name="value" display-name-key="Month" description-key="Month" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+      <css path="MonthPicker.css" order="1"/>
+    </resources>
+  </control>
+</manifest>
