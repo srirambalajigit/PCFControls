@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SriramControls" constructor="Autocomplete" version="0.0.1" display-name-key="SriramControls.Autocomplete" description-key="Autocomplete Control by Sriram" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="options" display-name-key="optionsValue" description-key="List of options separated by comma" of-type-group="optiondatatypes" usage="input" required="true" />
+    <property name="selectedValue" display-name-key="selectedValue" description-key="Selected Option" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="backgroundColor" display-name-key="backgroundColor" description-key="Background Color of Autocomplete" of-type="SingleLine.Text" usage="input" required="true" />
+    <type-group name="optiondatatypes">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>Multiple</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/Autocomplete.css" order="1" />
+    </resources>
+  </control>
+</manifest>
