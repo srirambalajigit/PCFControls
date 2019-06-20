@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SriramControls" constructor="Meter" version="0.0.1" display-name-key="SriramControls.Meter" description-key="Displays measurement within a known range For example Fuel level,Disk usage" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="meterValue" display-name-key="MeterValue" description-key="Key in a value between min and max" of-type-group="numbers" usage="bound" required="true" />
+    <property name="minimum" display-name-key="MinimumValue" description-key="Specifies the minimum value of the range." of-type-group="numbers" usage="input" required="true" />
+    <property name="maximum" display-name-key="MaximumValue" description-key="Specifies the maximum value of the range" of-type-group="numbers" usage="input" required="true" />
+    <property name="low" display-name-key="LowValue" description-key="Specifies the range that is considered to be a low value." of-type-group="numbers" usage="input" required="false" />
+    <property name="high" display-name-key="Highvalue" description-key="Specifies the range that is considered to be a high value." of-type-group="numbers" usage="input" required="false" />
+    <property name="optimum" display-name-key="OptimumValue" description-key="Specifies the optimal value/preferred zone of the range.If optimum value will be between high and max, upper range will be preferred zone.If between min and low,lower range is preferred zone." of-type-group="numbers" usage="input" required="false" />
+    <property name="Unit" display-name-key="Unit" description-key="Specifies the Unit" of-type="SingleLine.Text" usage="input" required="false" />
+    <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/Meter.css" order="1" />
+      <!--<resx path="strings/Meter.1033.resx" version="1.0.0" />-->
+    </resources>
+  </control>
+</manifest>
