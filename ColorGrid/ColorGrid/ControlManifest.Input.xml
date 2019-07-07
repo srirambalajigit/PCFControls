@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SriramControls" constructor="ColorGrid" version="0.0.1" display-name-key="SriramControls.ColorGrid" description-key="Color Grid Control by Sriram" control-type="standard">
+      <data-set name="simpleTableGrid" display-name-key="SimpleTableGridProperty_Display_Key">
+	  </data-set>
+  
+    <property name="headerBackgroundColor" display-name-key="headerBackgroundColor" description-key="Background Color of header." of-type="SingleLine.Text" usage="input" required="true" default-value="darkblue"/>
+    <property name="headerForegroundColor" display-name-key="headerForegroundColor" description-key="Foreground Color of header." of-type="SingleLine.Text" usage="input" required="true" default-value="white"/>
+    <property name="rowBackColor" display-name-key="rowBackColor" description-key="Back Color of row." of-type="SingleLine.Text" usage="input" required="true" default-value="lightblue"/>
+    <property name="cellBackgroundColor" display-name-key="cellBackgroundColor" description-key="Background Color of Cell. Can also give a conditional expression." of-type="SingleLine.Text" usage="input" required="true"/>
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/ColorGrid.css" order="1" />
+      <resx path="strings/ColorGrid.1033.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>
